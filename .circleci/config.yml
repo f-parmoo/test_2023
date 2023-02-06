@@ -1,8 +1,9 @@
 version 2.1
 
-workflow:
-  jobs:
-    - build-and-test
+workflows:
+  test-workflow:
+    jobs:
+      - build-and-test
 
 
 jobs:
