@@ -36,5 +36,10 @@ jobs:
           # This assumes pytest is installed via the install-package step above
           command: echo test1
       - run:
+          name: print env value
+          command: echo $TEST_VAR1
+      - run:
           name: Run my_test
           command: python  my_test.py
+
+
